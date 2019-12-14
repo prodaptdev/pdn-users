@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.prodapt</groupId>
 	<artifactId>pdn-users</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-app</version>
 	<name>pdn-users</name>
 	<description>Project for prodapt users</description>
 
