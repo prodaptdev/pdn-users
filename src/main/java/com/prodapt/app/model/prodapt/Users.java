@@ -5,14 +5,16 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
+@ApiModel(description="All details about the users. ")
 @Entity
 @Table(name = "users")
 @Data
 public class Users {
 	@Id	
-	@Column(name = "EmpID")
+	@Column(name = "EmpID")	
 	private Integer employeeID;
 	@Column(name = "EmpProject")
 	private String employeeProject;
