@@ -15,20 +15,20 @@ import lombok.Data;
 public class Users {
 	@Id	
 	@Column(name = "EmpID")	
-	private Integer employeeID;
+	private Integer id;
 	@Column(name = "EmpProject")
-	private String employeeProject;
+	private String project;
 	@Column(name = "EmpFirstName")
-	private String employeeFirstName;
+	private String firstName;
 	@Column(name = "EmpLastName")
-	private String employeeLastName;
+	private String lastName;
 	@Column(name = "EmpDesignation")
-	private String employeeDesignation;
+	private String designation;
 	@Column(name = "EmpMail")
-	private String employeeMail;
+	private String email;
 	@Column(name = "EmpManagerId")
-	private Integer employeeManagerId;
+	private Integer managerId;
 	@Column(name = "EmpDirectorId")
-	private Integer employeeDirectorId;
+	private Integer directorId;
 	
 }
