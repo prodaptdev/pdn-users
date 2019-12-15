@@ -1,4 +1,4 @@
-package com.prodapt.app.controller;
+package com.pro.app.controller;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.prodapt.app.model.dto.ApiResponse;
-import com.prodapt.app.model.prodapt.Users;
-import com.prodapt.app.service.UserService;
+import com.pro.app.model.dto.ApiResponse;
+import com.pro.app.model.prodapt.Users;
+import com.pro.app.service.UserService;
 
 import io.swagger.annotations.ApiOperation;
 

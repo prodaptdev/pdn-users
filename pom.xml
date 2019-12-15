@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.prodapt</groupId>
+	<groupId>com.pro</groupId>
 	<artifactId>pdn-users</artifactId>
 	<version>0.0.1-app</version>
 	<name>pdn-users</name>
-	<description>Project for prodapt users</description>
+	<description>Project for pro users</description>
 
 	<properties>
 		<java.version>11</java.version>

@@ -1,4 +1,4 @@
-package com.prodapt.app;
+package com.pro.app;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,7 +25,7 @@ public class Swagger2Config {
 	    		//title
 	    		"PDN-Users", 
 	    		//description
-	    		"Prodapt Dev Network Users", 
+	    		"Pro Dev Network Users", 
 	    		//version
 	    		"v0.0.0", 
 	    		//termsOfServiceUrl
@@ -48,7 +48,7 @@ public class Swagger2Config {
 		
 		return new Docket(DocumentationType.SWAGGER_2)
 				.groupName("PDN-Users").select()
-				.apis(RequestHandlerSelectors.basePackage("com.prodapt.app.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.pro.app.controller"))
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(apiInfo())
