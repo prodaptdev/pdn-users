@@ -38,7 +38,7 @@ public class UsersController {
 	@ApiOperation(value = "Find a user",notes = "Retrieve a user from prodapt.users table")
 	@GetMapping("/v1/getUser/{id}")
 	public ResponseEntity<?> getUsersId(
-			@PathVariable("id") Integer id) 
+			@PathVariable("id") String id) 
 	{
 		return new ResponseEntity<>(userService.getUsersByIdFromRepo(id),HttpStatus.OK);
 	}
@@ -63,7 +63,7 @@ public class UsersController {
 	@ApiOperation(value = "Deletes a user",notes = "Deletes a user from prodapt.users table")
 	@DeleteMapping("/v1/deleteUser/{id}")
 	public ResponseEntity<?> deleteUserById(
-			@PathVariable("id") Integer id) 
+			@PathVariable("id") String id) 
 	{		
 		ResponseEntity<ApiResponse> apiResp = userService.deleteUserByIdFromRepo(id);
 		

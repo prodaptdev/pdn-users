@@ -1,5 +1,7 @@
 package com.prodapt.app.model.prodapt;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,21 +16,23 @@ import lombok.Data;
 @Data
 public class Users {
 	@Id	
-	@Column(name = "EmpID")	
-	private Integer id;
-	@Column(name = "EmpProject")
+	@Column(name = "ID")	
+	private String id;
+	@Column(name = "Project")
 	private String project;
-	@Column(name = "EmpFirstName")
+	@Column(name = "FirstName")
 	private String firstName;
-	@Column(name = "EmpLastName")
+	@Column(name = "LastName")
 	private String lastName;
-	@Column(name = "EmpDesignation")
+	@Column(name = "Designation")
 	private String designation;
-	@Column(name = "EmpMail")
+	@Column(name = "Mail")
 	private String email;
-	@Column(name = "EmpManagerId")
+	@Column(name = "ManagerId")
 	private Integer managerId;
-	@Column(name = "EmpDirectorId")
+	@Column(name = "DirectorId")
 	private Integer directorId;
+	@Column(name = "LastModifiedDate")
+	private Timestamp lastModifiedDate;
 	
 }

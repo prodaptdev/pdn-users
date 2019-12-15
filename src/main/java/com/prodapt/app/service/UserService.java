@@ -29,7 +29,7 @@ public class UserService {
 		return usersRepo.findAll();
 	}
 
-	public Users getUsersByIdFromRepo(Integer userId) {
+	public Users getUsersByIdFromRepo(String userId) {
 		log.info("calling user repo for user "+userId);
 		
 		return usersRepo.findById(userId).orElseThrow(()->new UserNotFoundException(userId));
@@ -44,7 +44,7 @@ public class UserService {
 		return new ResponseEntity<>(new ApiResponse("Successfully created/updated the user",new Date(),HttpStatus.CREATED), HttpStatus.CREATED);
 	}
 
-	public ResponseEntity<ApiResponse> deleteUserByIdFromRepo(Integer id) {
+	public ResponseEntity<ApiResponse> deleteUserByIdFromRepo(String id) {
 		log.info("calling user repo for saving the user details");
 		
 		usersRepo.deleteById(id);		

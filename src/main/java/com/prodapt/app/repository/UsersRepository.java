@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.prodapt.app.model.prodapt.Users;
 
 @Repository
-public interface UsersRepository extends JpaRepository<Users, Integer> {
+public interface UsersRepository extends JpaRepository<Users, String> {
 	
 }
